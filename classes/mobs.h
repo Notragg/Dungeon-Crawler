@@ -23,8 +23,8 @@ vector<string> dialogue;
  
 public:
 
-Enemy(std::string Ename , int health , int attack , int defense , int wrath)
-: name(Ename) , hp(health) , atk(attack) , def(defense) , wraith(wrath)
+Enemy(std::string Ename , int health , int attack , int defense , int wrath , int mon)
+: name(Ename) , hp(health) , atk(attack) , def(defense) , wraith(wrath) , loot(mon)
 {}
 
 
