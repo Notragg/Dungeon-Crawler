@@ -7,9 +7,8 @@
 int main(){
     srand(time(0));
     Enemy Viper("Sand Viper", 40, 20, 15, 5, 50);
+/*--------------------------------------------------------------------------------------------------------*/
     Viper.addDialogues({
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "Sand remembers...",                        // Short 1
     "Your heat... fades.",                      // Short 2
     "Die in silence.",                          // Short 3
@@ -19,39 +18,26 @@ int main(){
     "Your footprints will be gone by sunset, just like all the others." // Lghkjong 2
 });
 /*--------------------------------------------------------------------------------------------------------*/
-=======
-=======
->>>>>>> Stashed changes
-    "*Ssssss...*",
-    "*Forked tongue flickers in the air*",
-    "*Yellow eyes track your every heartbeat*",
-    "*Coils its body, ready to spring*",
-    "*The sound of scales sliding over hot sand*",
-    "*A drop of emerald venom falls from its fangs*",
-    "You are just... more heat in the desert..."
-}); 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     Enemy Golem("Obsidian Golem", 180, 55, 30, 4, 300);
     Golem.addDialogues({
-    "*Grinding of ancient stone on stone*",
-    "INTRUDER... DETECTED...",
-    "*Deep vibrations shake the floor beneath you*",
-    "THE KING SLEEPS. YOU DO NOT.",
-    "*Dust and pebbles fall from its joints*",
-    "GREED IS HEAVY... IT WILL CRUSH YOU...",
-    "*Its chest glows with a faint purple light*"
-});
+        "HALT. THIEF.",                             // Short 1
+        "GREED IS HEAVY.",                          // Short 2
+        "CRUSH THE FLESH.",                         // Short 3
+        "YOU. ARE. DUST.",                          // Short 4
+        "King Rameses built me to grind the greed of a thousand years into sand.", // Long 1
+        "I have stood still for centuries just to wait for a fool like you to arrive." // Long 2
+    });
+/*--------------------------------------------------------------------------------------------------------*/
     Enemy Mummy("Cursed Mummy", 120, 35, 20, 3, 150);
     Mummy.addDialogues({
-    "I was once a noble... now I am bound to this tomb.",
-    "The pharaoh's command is my eternal prison.",
-    "You should not have disturbed my rest.",
-    "The sands will claim you as they claimed me.",
-    "Your fate is written in sand."
+    "Linen and dust.",                          // Short 1
+    "Free me. Now.",                            // Short 2
+    "Eternal prison.",                          // Short 3
+    "Sleep with us.",                           // Short 4
+    "I was once a noble General with a family... now I am a shadow with a blade.", // Long 1
+    "The Pharaoh promised us eternal life, but he never said it would be this nightmare." // Long 2
 });
+/*--------------------------------------------------------------------------------------------------------*/
 Mummy.speak();
 Golem.speak();
 Viper.speak();
