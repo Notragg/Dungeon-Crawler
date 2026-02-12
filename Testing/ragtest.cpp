@@ -15,7 +15,7 @@ int main(){
     "The dunes hunger.",                        // Short 4
     "I strike without warning.",                // Short 5
     "I was once human too, until the gold turned my skin to scales.", // Long 1
-    "Your footprints will be gone by sunset, just like all the others." // Long 2
+    "Your footprints will be gone by sunset, just like all the others." // Lghkjong 2
 });
 /*--------------------------------------------------------------------------------------------------------*/
     Enemy Golem("Obsidian Golem", 180, 55, 30, 4, 300);
