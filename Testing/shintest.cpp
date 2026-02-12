@@ -21,5 +21,16 @@ int main(){
         "So it is my mistake????? is it????"
     });
 
+    Enemy Ankh("Ankh" , 1 , 10000 , 1 , 1 ,1 ); // kill or get killed.
+    Ankh.addDialogues({
+    "Fate saves us both from each other...",
+    "The gods let you live one more turn... or perhaps I do.",
+    "Everything will be sand soon.",
+    "Poor child... why did you come here?",
+    "Run. While you still can.",
+    "If you stay, I will kill you.",
+    "I cannot escape... so you must, for both of us."
+});
+
 
 };
