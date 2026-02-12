@@ -45,6 +45,10 @@ void talkAction(){
  holder = rand()%3 + 1;
 }
 
+int GetAction(){
+    return holder;
+}
+
 };
 
 #endif

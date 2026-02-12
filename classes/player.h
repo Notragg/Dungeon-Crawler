@@ -17,9 +17,9 @@ const std::string name;
 int hp;
 int atk;
 int def;
-int sparkle;
-int loot;
-int holder;
+int sparkle = 0;
+int loot = 0;
+int holder = 0;
 vector<string> inventory;
 
 
@@ -30,8 +30,12 @@ Player(string Pname , int health , int attack , int defense )
      loot = 0;
 }
 
+void talkAction(){
+ cout << "PICK ROCK(1) , PAPER (2) OR SCISSORS(3)!!!\n";
+cin >> holder ;}
 
-
+int GetAction(){
+ return holder;}
 };
 
 #endif
