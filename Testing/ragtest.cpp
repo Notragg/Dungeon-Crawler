@@ -9,6 +9,7 @@ int main(){
     Enemy Viper("Sand Viper", 40, 20, 15, 5, 50);
     Viper.addDialogues({
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "Sand remembers...",                        // Short 1
     "Your heat... fades.",                      // Short 2
     "Die in silence.",                          // Short 3
@@ -19,6 +20,8 @@ int main(){
 });
 /*--------------------------------------------------------------------------------------------------------*/
 =======
+=======
+>>>>>>> Stashed changes
     "*Ssssss...*",
     "*Forked tongue flickers in the air*",
     "*Yellow eyes track your every heartbeat*",
@@ -27,6 +30,9 @@ int main(){
     "*A drop of emerald venom falls from its fangs*",
     "You are just... more heat in the desert..."
 }); 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     Enemy Golem("Obsidian Golem", 180, 55, 30, 4, 300);
     Golem.addDialogues({
