@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdlib>
 #include <initializer_list>
-#include "X:\DUNGEONCRAWLER\Dungeon-Crawler\classes\mobs.h"
+#include "mobs.h"
 
 
 int main(){
@@ -21,5 +21,5 @@ int main(){
         "So it is my mistake????? is it????"
     });
 
-    
+
 };
