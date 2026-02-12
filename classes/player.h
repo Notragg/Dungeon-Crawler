@@ -30,6 +30,8 @@ Player(string Pname , int health , int attack , int defense )
      loot = 0;
 }
 
+
+
 };
 
 #endif
