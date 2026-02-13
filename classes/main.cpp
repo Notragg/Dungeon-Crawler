@@ -4,23 +4,80 @@
 #include <cstdlib>
 #include <initializer_list>
 #include "mobs.h"
+#include "player.h"
 
 
 int whoWins();
 
-int main(){
-srand(time(0));
-Enemy Scorpion("Scorpion" , 90 , 45 , 15 , 2 , 100); // name(Ename) , hp(health) , atk(attack) , def(defense) , wraith(wrath) , loot(mon)
-Scorpion.addDialogues({
-    "*Hissss*\n",
-    "*Click-click*\n",
-    "*Rattle of chitin*\n",
-    "*Sharp tail snaps in the air*\n",
-    "*Low aggressive screech*\n",
-    "*Dry sand shifts as it moves*\n",
-    "*Venom drips from its stinger*\n"
-});
+int main() {
 
+    srand(time(0));
+
+    Player hero("Hero", 100, 40, 20);
+
+    Enemy Scorpion("Scorpion", 90, 45, 15, 2, 100);
+
+    Scorpion.addDialogues({
+        "*Hissss*\n",
+        "*Click-click*\n",
+        "*Venom drips*\n"
+    });
+
+    cout << "Battle Start!\n\n";
+
+    while (hero.isAlive() && Scorpion.isAlive()) {
+
+        // Player turn
+        hero.talkAction();
+        Scorpion.talkAction();
+
+        int p = hero.GetAction();
+        int e = Scorpion.GetAction();
+
+        int result = whowins(p, e);
+
+        if (result == 1) {
+            int dmg = calculateDamage(
+                hero.getAttack(),
+                Scorpion.getDefense()
+            );
+
+            Scorpion.takeDamage(dmg);
+
+            cout << "You hit " << Scorpion.getName()
+                 << " for " << dmg << " damage!\n";
+        }
+
+        else if (result == -1) {
+            int dmg = calculateDamage(
+                Scorpion.getAttack(),
+                hero.getDefense()
+            );
+
+            hero.takeDamage(dmg);
+
+            cout << Scorpion.getName()
+                 << " hits you for " << dmg << " damage!\n";
+        }
+
+        else {
+            cout << "Draw! No damage.\n";
+        }
+
+        cout << "Your HP: " << hero.getHP() << endl;
+        cout << "Enemy HP: " << Scorpion.getHP() << endl;
+
+        Scorpion.speak();
+
+        cout << "----------------------\n";
+    }
+
+    if (hero.isAlive())
+        cout << "\nYou Win!\n";
+    else
+        cout << "\nYou Lose!\n";
+
+    return 0;
 }
 
 int whowins(int player , int enemy){
@@ -54,4 +111,16 @@ if (player == 3){
 }
 
 return 0; 
+}
+
+int calculateDamage(int atk, int def) {
+    int damage = atk - (def / 2);
+
+    // Random small variation
+    damage += rand() % 3;
+
+    if (damage < 1)
+        damage = 1;
+
+    return damage;
 }

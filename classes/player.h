@@ -36,6 +36,36 @@ cin >> holder ;}
 
 int GetAction(){
  return holder;}
+
+
+
+int getAttack() {
+    return atk;
+}
+
+int getDefense() {
+    return def;
+}
+
+void takeDamage(int dmg) {
+    hp -= dmg;
+    if (hp < 0) hp = 0;
+}
+
+bool isAlive() {
+    return hp > 0;
+}
+
+int getHP() {
+    return hp;
+}
+
+string getName() {
+    return name;
+}
+
+
+
 };
 
 #endif
