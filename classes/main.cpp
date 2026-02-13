@@ -37,7 +37,7 @@ int main() {
         int p = hero.GetAction();
         int e = Scorpion.GetAction();
 
-        int result = whowins(p, e);
+        int result = whoWins(p, e);
 
         if (result == 1) {
             int dmg = calculateDamage(
