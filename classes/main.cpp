@@ -7,7 +7,7 @@
 #include "player.h"
 
 //..................................................................................
-int whoWins();
+
 int whoWins(int player, int enemy);
 int calculateDamage(int atk, int def);
 
