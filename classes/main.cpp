@@ -5,7 +5,7 @@
 #include <initializer_list>
 #include "mobs.h"
 #include "player.h"
-
+/*GOD OF WWAR ADAPT KREGE-BAAAT KAHATM*/
 //..................................................................................
 
 int whoWins(int player, int enemy);
