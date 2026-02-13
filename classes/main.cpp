@@ -7,7 +7,7 @@
 #include "player.h"
 /*GOD OF WWAR ADAPT KREGE-BAAAT KAHATM*/
 //..................................................................................
-int whoWins();
+
 int whoWins(int player, int enemy);
 int calculateDamage(int atk, int def);
 
