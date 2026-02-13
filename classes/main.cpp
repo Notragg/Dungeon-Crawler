@@ -6,7 +6,7 @@
 #include "mobs.h"
 #include "player.h"
 
-//..................................................................................
+//................................TREASURE OF SAHARA..................................................
 
 int whoWins(int player, int enemy);
 int calculateDamage(int atk, int def);
