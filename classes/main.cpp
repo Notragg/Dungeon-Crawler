@@ -85,7 +85,7 @@ int main() {
 
 //................................................
 
-int whowins(int player , int enemy){
+int whoWins(int player , int enemy){
 
 if (player < 1 || player > 3 || enemy < 1 || enemy > 3) {
         return 9; // invalid
