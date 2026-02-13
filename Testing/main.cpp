@@ -10,23 +10,19 @@
 
 int whoWins(int player, int enemy);
 int calculateDamage(int atk, int def);
-void waitForEnter();
+
 //.........................................................................................
 int main() {
 
     bool start = true ;
- 
+
     while (start){
          
         cout << "iss duniya me kai tarah ka log hai...." << endl;
-        waitForEnter();
         cout << "kuch ko chaiye paisa.. kuch ko chaiye izzat..." << endl;
-        waitForEnter();
         cout << "Lekin dost , kuch hi aise sarphireh hai jinhe chaiye .... jinne ke liye ashaye." << endl;
-        waitForEnter();
 
         cout << "Tum iss safar mai apna rasta khud chuno ge , toh asha hai dost ki ye safar tumhare liye yaad gar rahega." << endl;
-        waitForEnter();
         cout << "Kya mai tumhara naam jaan sakta hu?" << endl;
         string h;
         cin >> h ;
@@ -34,20 +30,23 @@ int main() {
          
 
         cout << "**23 saal bad**\n";
-        waitForEnter();
-        cout << "Ek bar ke andar ek nashe me dhund aadmi betha hua tha , uski shakal utri hui thi aur mano ki uski akho se sari khushi asoo ban ke beh chuki thi.\n";waitForEnter();
-        cout << "**Woh aadmi khada hota hai aur uthe uski daru ki bottle me khud ka chehra dekh raha hota hai... phir achanak se...\n";waitForEnter();
-        cout << "BAMMMMMM!!!!!!-!!!-\n" << "**uske sar me zor se ek maar padti hai , woh jor se chilata hai aur apne chehra ko pakad ke niche gir jata hai.\n**";waitForEnter();
-        cout << "oye ladke!! , abhi tak tune hamare paise wapas nahi kiya hai ,aj pure ke pure 4 mahine ho chuke hai. ab samajh aya ki mera baap mujhe kyu tum jaise logo ko paisa dene se mana karta tha!!!\n" << "**phir woh anjan ladka hame ek laat marta hai aur hamare uppar ek muda hua kagaz ka tukda phek ke jata hai\n**";waitForEnter();
-        cout << "**ham jaise taise uthte hai aur uss mude hue kagaz ke tukde ko kholte hai , ussko dekhne ke bad mano jaise ki hamare joh khushi phele beh gayi thi woh kudke wapas agayi ho\n**";waitForEnter();
+        cout << "Ek bar ke andar ek nashe me dhund aadmi betha hua tha , uski shakal utri hui thi aur mano ki uski akho se sari khushi asoo ban ke beh chuki thi.\n";
+        cout << "**Woh aadmi khada hota hai aur uthe uski daru ki bottle me khud ka chehra dekh raha hota hai... phir achanak se...\n";
+        cout << "BAMMMMMM!!!!!!-!!!-\n" << "**uske sar me zor se ek maar padti hai , woh jor se chilata hai aur apne chehra ko pakad ke niche gir jata hai.\n**";
+        cout << "oye ladke!! , abhi tak tune hamare paise wapas nahi kiya hai ,aj pure ke pure 4 mahine ho chuke hai. ab samajh aya ki mera baap mujhe kyu tum jaise logo ko paisa dene se mana karta tha!!!\n" << "**phir woh anjan ladka hame ek laat marta hai aur hamare uppar ek muda hua kagaz ka tukda phek ke jata hai\n**";
+        cout << "**ham jaise taise uthte hai aur uss mude hue kagaz ke tukde ko kholte hai , ussko dekhne ke bad mano jaise ki hamare joh khushi phele beh gayi thi woh kudke wapas agayi ho\n**";
         //displays ascii art of the tomb
-        cout << "ahahahahha , ye hui na baat! akhir kar ab mai is nark se bahar nikall paunga!!!\n" << "**ham jaise taise nashe me madhosh ho kar bartender ke muh pe paise phek ke bahar bhag jaate hai\n**";waitForEnter();
-        cout << "4 MAHINE BAAD\n";waitForEnter();
-        cout << "MUJHE YAKIN NAHI HO RAHA , RAMSEYS KA MAKBARA!!!! YE KOI KALPANA NAHI ,BALKI EK HAKIKAT HAI!!!!!!!\n";waitForEnter();
+        cout << "ahahahahha , ye hui na baat! akhir kar ab mai is nark se bahar nikall paunga!!!\n" << "**ham jaise taise nashe me madhosh ho kar bartender ke muh pe paise phek ke bahar bhag jaate hai\n**";
+        cout << "4 MAHINE BAAD\n";
+        cout << "MUJHE YAKIN NAHI HO RAHA , RAMSEYS KA MAKBARA!!!! YE KOI KALPANA NAHI ,BALKI EK HAKIKAT HAI!!!!!!!\n";
         cout << "--------------------------------------------------------------------------------\n";
-        cout << hero.getName() << " tumhara safar ab shuru hota hai!!!  THE GAME STARTS!!!\n";waitForEnter();
+        cout << hero.getName() << " tumhara safar ab shuru hota hai!!!  THE GAME STARTS!!!\n";
         cout << "--------------------------------------------------------------------------------\n";
-        start = false;
+
+
+
+
+
 
     }
 
@@ -107,13 +106,4 @@ int calculateDamage(int atk, int def) {
         damage = 1;
 
     return damage;
-}
-
-//........................................................................
-
-void waitForEnter() {
-    cout << "\n[Press Enter to continue...]";
-    cin.ignore();
-    cin.get();
-    cout << "\n";
 }
