@@ -6,7 +6,7 @@
 #include "mobs.h"
 
 
-int WhoWins();
+int whoWins();
 
 int main(){
 srand(time(0));
