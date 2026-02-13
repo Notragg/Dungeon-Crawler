@@ -9,36 +9,36 @@
 int main() {
     srand(time(0));
 
-    //  Giant Sand Beetle (Tank Type)
-    Enemy GiantSandBeetle("Giant Sand Beetle", 120, 30, 40, 1, 150);
-    GiantSandBeetle.addDialogues({
-        "*Heavy armored legs crunch the sand*\n",
-        "*A deep chittering echoes*\n",
-        "*Its shell glints under the sun*\n",
-        "*The ground trembles slightly*\n",
-        "*It slams its hard shell forward*\n",
-        "*Dry sand sprays in the air*\n",
-        "*A metallic screech erupts*\n"
+    //  Frost Jotunn (Tank Type)
+    Enemy FrostJotunn("Frost Jotunn", 140, 28, 45, 1, 180);
+    FrostJotunn.addDialogues({
+        "*Ice cracks beneath its massive feet*\n",
+        "*A freezing wind surrounds you*\n",
+        "*Its icy skin glows pale blue*\n",
+        "*The ground trembles as it steps*\n",
+        "*It raises a gigantic frozen club*\n",
+        "*Snow swirls violently in the air*\n",
+        "*A thunderous roar shakes the battlefield*\n"
     });
 
-    // Sand Jackal (Balanced / Fast Attacker)
-    Enemy SandJackal("Sand Jackal", 85, 40, 20, 2, 120);
-    SandJackal.addDialogues({
-        "*A sharp howl pierces the desert air*\n",
-        "*Claws scratch rapidly against sand*\n",
-        "*Low growling echoes nearby*\n",
-        "*Golden eyes glare fiercely*\n",
-        "*It circles you swiftly*\n"
+    //  Draugr Warrior (Balanced / Fast Attacker)
+    Enemy DraugrWarrior("Draugr Warrior", 95, 42, 25, 2, 140);
+    DraugrWarrior.addDialogues({
+        "*A rusted blade scrapes against stone*\n",
+        "*Cold undead eyes stare into yours*\n",
+        "*It moves unnaturally fast*\n",
+        "*A chilling battle cry echoes*\n",
+        "*Its armor rattles as it charges*\n"
     });
 
-    //  Desert Zombie (Slow but Strong)
-    Enemy DesertZombie("Desert Zombie", 150, 35, 25, 1, 200);
-    DesertZombie.addDialogues({
-        "*Dry bones crack as it moves*\n",
-        "*A hollow groan escapes*\n",
-        "*Sand falls from its tattered body*\n",
-        "*It drags its feet heavily*\n",
-        "*Its empty eyes stare at you*\n"
+    //  Fire Demon of Muspelheim (Slow but Strong)
+    Enemy FireDemon("Fire Demon", 160, 38, 30, 1, 220);
+    FireDemon.addDialogues({
+        "*Flames erupt around its body*\n",
+        "*Molten cracks glow across its skin*\n",
+        "*Heat distorts the air around you*\n",
+        "*It drags a blazing sword across the ground*\n",
+        "*A fiery roar bursts forward*\n"
     });
 
     return 0;
