@@ -24,6 +24,7 @@ vector<string> inventory;
 
 
 public:
+
 Player(string Pname , int health , int attack , int defense )
 : name(Pname) , hp(health) , atk(attack) , def(defense) {
      sparkle = 0;
